@@ -8,7 +8,7 @@ const Model = ({ params }) => {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         console.log(params.id)
-        fetch(`http://localhost:5000/api/models/${params.id}`)
+        fetch(`https://atlan-backend-2kob.onrender.com/${params.id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
